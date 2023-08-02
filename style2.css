@@ -1,0 +1,576 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins' , sans-serif;
+}
+body{
+     color: rgb(241, 238, 235);
+     background-color: black ;
+     
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100%;
+    padding:20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    position: relative;
+    font-size: 25px;
+    color: azure;
+    text-decoration: none;
+    font-weight: 800;
+    
+
+}
+.navbar a {
+    display:inline-block;
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+
+}
+.navbar a:hover {
+    color: rgb(240, 156, 13);
+
+}
+.home{
+     position: relative;
+     width:100%;
+     justify-content: space-around;
+     height: 100vh;
+     background: url('https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2020/05/black-paper-background.jpg?w=960&h=600&crop=1');
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     align-items: center;
+     padding: 70px 10% 0;
+    
+    
+    
+    
+    }
+    .home-content {
+        max-width: 600px;
+    }
+    .home-content h3 {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .home-content h3 span{
+        color: rgb(240, 156, 13);
+    }
+    .home-content h1 {
+        font-size: 56px;
+        font-weight:700;
+        margin: -3px 0;
+
+    }
+    .home-content h1 span{
+        color: rgb(240, 156, 13);
+    }
+    .home-content p{
+        font-size: 20px;
+
+    }
+   
+   
+
+.btn-box {
+    display: inline-block;
+    padding: 12px 28px;
+    background: rgb(137, 85, 18);
+    border-radius: 40px;
+    font-size: 16px;
+    color: antiquewhite;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn-box:hover{
+    color: rgb(14, 13, 13);
+    background-color: azure;
+}
+
+.about{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 1.5rem;
+  background: url('https://images.fineartamerica.com/images/artworkimages/medium/3/1-curved-black-paper-on-a-black-background-zbigniew-dziok.jpg');
+  background-size: cover;
+  padding:70px;
+
+}
+.about-img img{
+    padding-bottom: 20%;
+    max-width: 630px;
+    height: auto;
+    width: 100%;
+    border-radius: 50px;
+    border: 12px double whitesmoke;
+}
+.about-text h2{
+font-size: 60px;
+}
+.about-text h2 span{
+    color:rgb(137, 85, 18); 
+}
+
+.about-text h3{
+    font-size: 29px;
+    font-weight: 600;
+    color: rgb(227, 186, 74);
+    line-height: 1.7;
+    margin:15px 0 30px;
+   
+}
+.about-text p{
+    font-size: 20px;
+    font-weight: 600;
+    color: aliceblue;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+   
+}
+#parameter{
+    display: flex;
+    flex-wrap: wrap;
+    background: url('https://images.fineartamerica.com/images/artworkimages/medium/3/1-curved-black-paper-on-a-black-background-zbigniew-dziok.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.skill h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+
+}
+.skill span{
+    color:rgb(137, 85, 18);
+}
+h3{
+    margin:5px;
+}
+.skill{
+    width:500px;
+    margin:60px auto;
+    color: aliceblue;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0,25), 0 10px 10px
+rgba(0,0,0,0,22);
+
+}
+.skill li{
+    margin: 20px 0;
+    padding: 10px;
+}
+.bar{
+    background: #353b48;
+    display:block;
+    height:20px;
+    border:1px solid rgba(0,0,0,0,3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:0 1px 3px rgba(0,0,0,0,25), 0 1px 2px
+    rgba(0,0,0,0,22); 
+    transition: all 0.3s cubic-bezier(.25,.8,.25,.1);
+}
+.bar:hover{
+   box-shadow:  0 14px 28px rgba(0,0,0,0,25), 0 10px 10px
+rgba(0,0,0,0,22);
+}
+.bar span{
+    height: 20px;
+    float:left;
+    background: linear-gradient(135deg, rgba(236,0,140,1)0%,rgba(252,103,103,1)100%);
+
+}
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+.css{
+    width: 70%;
+    animation: css 3s;
+}
+.javascript{
+    width: 50%;
+    animation: javascript 3s;
+}
+.python{
+    width: 66%;
+    animation: python 3s;
+}
+@keyframes html{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:90%;
+    }
+}
+@keyframes css{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:70%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:50%;
+    }
+}
+@keyframes python{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:66%;
+    }
+}
+.container{
+    width:100%;
+    padding: 35px 10%;
+    min-height: 100vh;
+    background: url('https://images.fineartamerica.com/images/artworkimages/medium/3/1-curved-black-paper-on-a-black-background-zbigniew-dziok.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+main.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+.col header.title{
+    font-family: helvetica;
+    color: rgb(137, 85, 18);
+    padding: 0px 0px 20px 30px;
+
+}
+.col .title h2{
+
+    font-size: 60px;
+    font-weight: 800;
+    text-decoration: none;
+    text-decoration-color: rgb(135, 98, 34) ;
+}
+.col .title h2{
+    text-align: center;
+}
+.col .contents{
+    padding: 0px 30px;
+    border-left: 2px solid rgb(242, 238, 231);
+}
+.col .contents .box{
+    position: relative;
+    padding:20px;
+    border: 1px solid rgb(237, 231, 227);
+    background-color: rgb(35, 36, 37);
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-bottom: 20px ;
+}
+.col .contents .box:hover{
+    box-shadow: 0px 3px 12px 0px #e18b22;
+    border: 1px solid transparent;
+}
+.col .contents .box::before{
+    content:'';
+    position:absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #e18b22;
+    border: 2px solid white;
+}
+.box h4{
+    position: relative;
+    color: rgb(137, 85, 18);
+
+}
+.box h3{
+    font-size: 19px;
+    padding: 10px 0px 6px;
+    font-family: helvetica;
+    color: aliceblue;
+}
+.box p{
+    line-height: 1.2;
+    color: bisque;
+    font-size: 17px;
+}
+
+
+
+
+.contact{
+    display: grid;
+    background: url('https://images.fineartamerica.com/images/artworkimages/medium/3/1-curved-black-paper-on-a-black-background-zbigniew-dziok.jpg');
+    background-size: cover;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap:3rem;
+    padding-left: 30px;
+    margin-top: 130px;
+
+}
+.contact-text h2{
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
+}
+.contact-text h2 span{
+    color: rgb(137, 85, 18);
+}
+.contact-text h4{
+    margin:15px 0;
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact-text p{
+    color: antiquewhite;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+
+}
+.contact-list{
+    margin-bottom: 3rem;
+}
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+.contact-list i{
+   display: inline-block;
+   color: rgb(240, 156, 13);
+   font-size: 20px;
+   font-weight: 600;
+   transition: all .40s ease;
+}
+.contact-list li a:hover{
+    transform: scale(1.01) translateY(-5px);
+    color: rgb(137, 85, 18);
+}
+
+
+.contact-form form{
+     position: relative;
+}
+.contact-form form input,form textarea{
+
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: whitesmoke;
+    color: rgb(171, 102, 54);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+.contact-form textarea{
+    resize:none ;
+    height:220px;
+
+}
+.contact-form form .send{
+    display: inline-block;
+    padding: 12px 28px;
+    background: rgb(137, 85, 18);
+    border-radius: 40px;
+    font-size: 16px;
+    color:white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    
+}
+.contact-form form .send:hover{
+    background-color: rgb(240, 156, 13);
+    color: black;
+}
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+@media (max-width : 780px){
+    body{
+           font-size: 0.2em;
+           background-color: #bbbbbb;   
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .logo{
+        display: block;
+    }
+    .navbar a{
+        position: relative;
+        display: flexbox;
+        flex-wrap: wrap;
+        margin: 10px 0;
+        font-size: 19px;
+        color: #e18b22;
+        justify-content: space-around;
+    }
+    .navbar a:hover{
+        color: rgb(245, 241, 241);
+    }
+    .about{
+        font-size: 1.7em;
+    }
+    .about-img img{
+        width:100%;
+
+    }
+    .about-text h2{
+        font-size: 1.7em;
+    }
+    .about-text h3{
+        font-size: 1.7em;
+    }
+    .about-text p{
+        font-size: 1.7em;
+    }
+    .home-content {
+        max-width: 600px;
+    }
+    .home-content h3 {
+        font-size: 4.0em;
+        font-weight: 400;
+    }
+    .home-content h3 span{
+        color: rgb(226, 241, 11);
+    }
+    .home-content h1 {
+        font-size: 4.0em;
+        font-weight:500;
+        margin: -3px 0;
+
+    }
+    .home-content h1 span{
+        color: rgb(240, 240, 38);
+    }
+    .home-content p{
+        font-size: 4.0em;
+
+    }
+    
+  }
+  
+  
+
+
+
+
+@media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+
+
+
